@@ -1,0 +1,125 @@
+.article-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media(max-width: 1145px){
+    justify-content: space-around;
+  }
+}
+
+.article-item {
+  width: 380px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #F3F3F3;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  margin-bottom: 50px;
+
+  & button {
+    width: 380px;
+    height: 65px;
+    background: #6EBBD3;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+      background: #d36574;
+      box-shadow: 2px 0 2px rgba(128, 218, 246, 0.2);
+      transition: background .3s ease-in;
+    }
+  }
+}
+
+
+.article-item-img__wrap{
+  position: relative;
+}
+.sale{
+  position: absolute;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 39px;
+  left: 35px;
+  top: 35px;
+  background: #E62D2D;
+  border-radius: 10px;
+}
+
+.like{
+  position: absolute;
+  display: flex;
+  right: 35px;
+  top: 35px;
+}
+
+
+.article-item-content__wrap {
+  height: 190px;
+  padding: 30px;
+}
+
+.article-content-title{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.article-content{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  align-items: center;
+  position: relative;
+
+  &:before{
+    content: '';
+    width: 4px;
+    height: 25px;
+    background: #6EBBD3;
+    display: block;
+    position: absolute;
+    left: -20px;
+  }
+
+  & p{
+    font-size: 12px;
+    line-height: 15px;
+    width: 90px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+.article-content__direct{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 20px;
+
+  & span{
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.article-item__price{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}

@@ -1,0 +1,34 @@
+.show-more {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.show-more__wrap {
+}
+
+.show-more__btn {
+  display: flex;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 17px;
+  width: 380px;
+  height: 65px;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #CACACA;
+
+  @media(max-width: 600px){
+    width: 300px;
+    height: 58px;
+  }
+
+  &:hover, :active{
+    background: #6EBBD3;
+    box-shadow: 2px 0 2px rgba(128, 218, 246, 0.2);
+    transition: background .3s ease-in;
+  }
+}
