@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="header-content__second container">
-                    <span>Найдено 349 котов</span>
+                    <span id="result-seach">Найдено 349 котов</span>
                 </div>
 
             </div>
@@ -63,14 +63,14 @@
             Сортировать по:
         </div>
         <div class="filter__item">
-            <select id="select-filter__price" class="filter-select">
+            <select id="select-filter__price"  class="filter-select">
                 <option selected disabled hidden>Цене </option>
-                <option value="to up">по возрастанию</option>
-                <option value="to down">по убыванию</option>
+                <option value="toUp">по возрастанию</option>
+                <option value="toDown">по убыванию</option>
             </select>
         </div>
         <div class="filter__item">
-            <select id="select-filter__old" class="filter-select filter-old">
+            <select id="select-filter__old" onclick="" class="filter-select filter-old">
                 <option selected disabled hidden>Возрасту </option>
                 <option value="to up">по возрастанию</option>
                 <option value="to down">по убыванию</option>
@@ -81,58 +81,39 @@
 </section>
     <article class="container">
     <div id="article-wrap">
+<!--        <div class="article-item">-->
 
+<!--            <div class="article-item-img__wrap">-->
+<!--                <div class="sale">-40%</div>-->
+<!--                <img class="like" src="../img/like-default.png" alt="like">-->
+<!--                <img class="article-item-img" src="../img/item-img.png" alt="cat pic">-->
+<!--            </div>-->
+<!--            <div class="article-item-content__wrap">-->
+<!--                <div class="article-content-title">-->
+<!--                    Кот полосатый-->
+<!--                </div>-->
 
+<!--                <div class="article-content">-->
+<!--                    <p>Коричневый окрас</p>-->
+<!--                    <div class="article-content__direct">-->
+<!--                        <span class="bold">2 мес.</span>-->
+<!--                        <span>Возраст</span>-->
+<!--                    </div>-->
+<!--                    <div class="article-content__direct">-->
+<!--                        <span class="bold">4</span>-->
+<!--                        <span>Кол-во лап</span>-->
+<!--                    </div>-->
+<!--                </div>-->
 
+<!--                <div class="article-item__price">-->
+<!--                    30 000 руб.-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="article-item__buy">-->
+<!--                <button >Купить</button>-->
+<!--            </div>-->
 
-
-
-        <div class="article-item">
-
-            <div class="article-item-img__wrap">
-                <div class="sale">-40%</div>
-                <img class="like" src="../img/like-default.png" alt="like">
-                <img class="article-item-img" src="../img/item-img.png" alt="cat pic">
-            </div>
-            <div class="article-item-content__wrap">
-                <div class="article-content-title">
-                    Кот полосатый
-                </div>
-
-                <div class="article-content">
-                    <p>Коричневый окрас</p>
-                    <div class="article-content__direct">
-                        <span class="bold">2 мес.</span>
-                        <span>Возраст</span>
-                    </div>
-                    <div class="article-content__direct">
-                        <span class="bold">4</span>
-                        <span>Кол-во лап</span>
-                    </div>
-                </div>
-
-                <div class="article-item__price">
-                    30 000 руб.
-                </div>
-            </div>
-            <div class="article-item__buy">
-                <button >Купить</button>
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--        </div>-->
 
     </div>
 </article>
@@ -144,7 +125,7 @@
     </div>
 </section>
     <footer class="container">
-    <a class="top-button" href="#"><</a>
+    <button class="top-button"><</button>
     <div class="footer-wrap">
         <div class="footer-content-wrap">
             <h3>Успей купить!</h3>
@@ -153,19 +134,20 @@
 
         <div class="footer-content-wrap-second">
             <div class="footer-email-wrap">
-                <label><input type="text" placeholder="Email" class="footer-email"></label>
+                <label><input id="email" type="text" placeholder="Email" class="footer-email"></label>
                 <div class="footer-checkbox">
                     <input type="checkbox">
                     Подписаться на новости
                 </div>
             </div>
 
-            <button class="subscribe-btn">
+            <button type="submit" class="subscribe-btn">
                 Подписаться
             </button>
         </div>
     </div>
 </footer>
+
 <!--</body>-->
 <script src="js/script.js"></script>
 </html>
