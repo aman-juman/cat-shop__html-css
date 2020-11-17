@@ -1,4 +1,4 @@
-.article-wrap {
+#article-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -7,6 +7,12 @@
     justify-content: space-around;
   }
 }
+
+//////////////
+.backgroundColorBlue{
+  background: #1F2021!important;
+}
+// ////////////////
 
 .article-item {
   width: 380px;
